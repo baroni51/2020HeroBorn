@@ -505,3 +505,4 @@ Received Import Request.
 Start importing Assets/Scripts/PlayerBehavior.cs using Guid(362ffaaf4afa6784dac58431ec720a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0e0a89f2df1c041f86619437b468086') in 0.011933 seconds 
   Import took 0.014546 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

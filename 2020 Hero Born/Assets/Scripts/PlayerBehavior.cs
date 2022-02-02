@@ -10,17 +10,21 @@ public class PlayerBehavior : MonoBehaviour
     private float vInput;
     private float hInput;
 
+    private Rigidbody _rb;
+
     void Update()
     {
         vInput = Input.GetAxis("Vertical") * moveSpeed;
         hInput = Input.GetAxis("Horizontal") * rotateSpeed;
+        /*
         this.transform.Translate(Vector3.forward * vInput * Time.deltaTime);
         this.transform.Rotate(Vector3.up * hInput * Time.deltaTime);
+        */
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        _rb = GetComponent<Rigidbody>();
     }
 
 }

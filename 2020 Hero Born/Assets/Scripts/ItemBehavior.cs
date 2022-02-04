@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class ItemBehavior : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnCollisionEnter(Collision collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.gameObject.name == "Player");
+        {
+            Destroy(this.transform.parent.gameObject);
+            Debug.Log("Item Collected");
+        }
     }
 }

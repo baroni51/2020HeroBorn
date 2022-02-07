@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
         if(other.name == "Player");
         {
             Debug.Log("Player detected give cookie");
+            Destroy("Health 3", .5f);
+
         }
     }
     void OnTriggerExit(Collider other)

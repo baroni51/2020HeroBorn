@@ -9,10 +9,6 @@ public class Enemy : MonoBehaviour
         if(other.name == "Player");
         {
             Debug.Log("Player detected give cookie");
-            if (other.name == "Health 3") ;
-            {
-                Destroy("Health 3", .5f);
-            }
 
 
         }
